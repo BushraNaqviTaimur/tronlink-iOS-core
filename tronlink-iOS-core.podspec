@@ -37,4 +37,7 @@ Pod::Spec.new do |s|
    "tronlink-iOS-core/Classes/gRPC/core/contract/VoteAssetContract.pbobjc.m",
    "tronlink-iOS-core/Classes/gRPC/core/contract/WitnessContract.pbobjc.m",
    "tronlink-iOS-core/Classes/gRPC/Api.pbrpc.m"]
+     s.prepare_command = <<-CMD
+    echo "Skipping git submodule update for Cocoapods installation"
+  CMD
 end
